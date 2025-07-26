@@ -65,3 +65,17 @@ Instale o allure com o Node:
 1. npm init -y
 2. npm install allure-commandline
 3. npx allure serve .\allure-results\
+
+---
+
+# Executando os testes de API via CLI utilizando Bruno
+
+**Requisitos:**
+
+- Node: ^20
+1. npm init -y 
+2. npm install @usebruno/cli
+3. Vá até o diretório da api: `cd ./__Tests__/api`
+4. Execute `npx bru run --env-file .\environments\serverest-dev.bru  --reporter-html results.html` para rodar os testes e gerar um relatório em HTML
+    1. Outras opções de executar são: `npx bru run --env-file .\environments\serverest-dev.bru --reporter-json results.json --reporter-junit results.xml --reporter-html results.html`
+5. Os testes serão executados em linha de comando
