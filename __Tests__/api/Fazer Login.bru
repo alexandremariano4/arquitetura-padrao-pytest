@@ -1,0 +1,32 @@
+meta {
+  name: Fazer Login
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseURL}}/login
+  body: json
+  auth: inherit
+}
+
+headers {
+  Accept: application/json
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "email":"{{email}}",
+    "password": "123456"
+  }
+}
+
+vars:post-response {
+  auth: res.body.authorization
+}
+
+assert {
+  res.status: eq 200
+  res.body.authorization: contains Bearer
+}

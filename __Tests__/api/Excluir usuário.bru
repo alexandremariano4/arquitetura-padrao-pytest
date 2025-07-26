@@ -1,0 +1,15 @@
+meta {
+  name: Excluir usuário
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseURL}}/usuarios/{{idUsuario}}
+  body: none
+  auth: inherit
+}
+
+assert {
+  res.status: eq 200
+}

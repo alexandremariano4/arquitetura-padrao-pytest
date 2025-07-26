@@ -1,0 +1,20 @@
+meta {
+  name: Excluir Produto
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{baseURL}}/produtos/{{idProduto}}
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: {{auth}}
+}
+
+assert {
+  res.body.message: eq Registro excluído com sucesso
+  res.status: eq 200
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Cadastrar Usuário
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseURL}}/usuarios
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nome": "{{$randomNamePrefix}}",
+    "email": "{{$randomEmail}}",
+    "password": "123456",
+    "administrador": "true"
+  }
+}
+
+vars:post-response {
+  idUsuario: res.body._id
+}
+
+assert {
+  res.status: eq 201
+}

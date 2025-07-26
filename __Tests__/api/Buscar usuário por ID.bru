@@ -1,0 +1,19 @@
+meta {
+  name: Buscar usuário por ID
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseURL}}/usuarios/{{idUsuario}}
+  body: none
+  auth: inherit
+}
+
+vars:post-response {
+  email: res.body.email
+}
+
+assert {
+  res.status: eq 200
+}

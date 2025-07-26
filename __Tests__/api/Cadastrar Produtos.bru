@@ -1,0 +1,33 @@
+meta {
+  name: Cadastrar Produtos
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseURL}}/produtos
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: {{auth}}
+}
+
+body:json {
+  {
+    "nome": "{{$randomProduct}}{{$guid}}",
+    "preco": {{$randomInt}},
+    "descricao": "{{$randomProduct}}",
+    "quantidade": {{$randomInt}}
+  }
+}
+
+vars:post-response {
+  idProduto: res.body._id
+}
+
+assert {
+  res.body.message: eq Cadastro realizado com sucesso
+  res.status: eq 201
+}
