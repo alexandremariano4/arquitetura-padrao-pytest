@@ -1,0 +1,13 @@
+[2025-07-26 02:02:19] [ERROR] Function: text_should_be | Element: a[href*="login"] > i | Type: N/A | Value/Text: N/A | Error: Traceback (most recent call last):
+  File "c:\Users\alexa\Documents\Projetos\Pessoais\Reviiv Desafio Técnico\helpers\log_decorator.py", line 11, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\alexa\Documents\Projetos\Pessoais\Reviiv Desafio Técnico\helpers\commands.py", line 39, in text_should_be
+    ).is_equal_to(text.upper())
+      ~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\alexa\Documents\Projetos\Pessoais\Reviiv Desafio Técnico\.venv\Lib\site-packages\assertpy\base.py", line 126, in is_equal_to
+    self.error('Expected <%s> to be equal to <%s>, but was not.' % (self.val, other))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexa\Documents\Projetos\Pessoais\Reviiv Desafio Técnico\.venv\Lib\site-packages\assertpy\assertpy.py", line 433, in error
+    raise AssertionError(out)
+AssertionError: [Element text are different than expected] Expected <> to be equal to <SIGNUP / LOGIN>, but was not.
+

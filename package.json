@@ -1,0 +1,14 @@
+{
+  "name": "allure-report",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "allure-commandline": "^2.34.1"
+  }
+}
