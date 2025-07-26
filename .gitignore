@@ -1,4 +1,6 @@
 **report**
+**results**
+**html**
 node_modules
 allure-results
 .venv
