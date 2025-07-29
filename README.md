@@ -15,7 +15,7 @@
 
 ### **🧱 Visão geral da arquitetura:**
 
-![image.png](./images/arquitetura.png)
+![system_architecture.png](./images/system_architecture.png)
 
 A arquitetura foi baseada em modelo Page Objects, utilizando a classe e módulo **Resource** para ser o “hub” do projeto, contendo todos dados modelos que são acessíveis a partir de qualquer test criado.
 
