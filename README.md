@@ -51,6 +51,10 @@ O motivo pela escolha deste modelo se dá por conta de que ao ter feito os teste
 - Guarda os arquivos de testes em si. Por exemplo: `test_e2e.py`.
 - Os testes consomem os recursos de `conftest.py`  para fixtures do pytest, e **Resources** para utilizar os métodos e funções do projeto
 
+### 📂 `utils/`
+
+- Armazena os módulos úteis para o sistema como por exemplo: `browser.py`.
+
 ### 📄 `conftest.py`
 
 - Arquivo padrão do `pytest` para declarar **fixtures compartilhadas**, configurações, e ganchos (`hooks`).
