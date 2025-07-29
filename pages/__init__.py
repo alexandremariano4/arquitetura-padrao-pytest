@@ -1,21 +1,21 @@
-from .ProductDetailedPage import (
+from .product_detailed_page import (
     ProductDetailed
 )
-from .CartPage import (
+from .cart_page import (
     Cart
 )
-from .ProductsPage import (
+from .products_page import (
     ProductsPage
 )
-from .SignupPage import (
+from .signup_page import (
     SignupPage
 )
-from .AccountCreatedPage import (
+from .account_created_page import (
     AccountCreatedPage
 )
-from .SignupPage import (
+from .signup_page import (
     SignupPage
 )
-from .HomePage import (
+from .home_page import (
     HomePage
 )
