@@ -5,3 +5,4 @@ node_modules
 allure-results
 .venv
 assets
+**/__pycache__*
