@@ -1,1 +1,1 @@
-from .base_resource import *
+from .BaseResource import *

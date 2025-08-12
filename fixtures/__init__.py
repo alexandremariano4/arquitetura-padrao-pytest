@@ -1,3 +1,3 @@
-from .user import (
+from .UserFactory import (
     UserFactory
 )
